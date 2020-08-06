@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kulim+Park:wght@200;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/675e0bba25.js" crossorigin="anonymous"></script>
+    <title>Sinergia</title>
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <a href="#header"><img class="logo" src="img/engranaje negro.png" alt=""></a>
+        <ul class="links">
+            <li><a href="#salas">Salas</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#formulario">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header">
+       <h1>SINERGIA</h1>
+       <h2>TU LUGAR DE TRABAJO</h2>
+       <a href="#formulario"><button class="btn btnReservar">Reservar</button></a>
+    </header>
+
+    <!-- SALAS -->
+    <section class="contenedor salas" id="salas">
+        <h2>Acompañamos cada etapa de<br>tu proyecto</h2>
+        <div class="grid">
+            <div class="salas-ind">
+                <img src="img/coworking.jpg" alt="">
+                <h3>Coworking flexible</h3>
+                <p class="pp">Puestos de trabajo flexible</p>
+                <p class="p-link"><a href="#">Ver más</a></p>
+            </div>
+            <div class="salas-ind">
+                <img src="img/taller.jpg" alt="">
+                <h3>Taller</h3>
+                <p class="pp">Mesadas amplias con<br>herramientas de bancada</p>
+                <p class="p-link p-link-f"><a href="#">Ver más</a></p>
+            </div>
+            <div class="salas-ind">
+                <img src="img/pañol.jpg" alt="">
+                <h3>Pañol</h3>
+                <p class="pp">Alquiler de herramientas<br>y venta de materiales</p>
+                <p class="p-link p-link-f"><a href="#">Ver más</a></p>
+            </div>
+            <div class="salas-ind">
+                <img src="img/cafeteria.jpg" alt="">
+                <h3>Cafetería</h3>
+                <p class="pp">Surtido para tu break</p>
+                <p class="p-link"><a href="#">Ver más</a></p>
+            </div>
+            <div class="salas-ind">
+                <img src="img/reunion.jpg" alt="">
+                <h3>Salas de reunión</h3>
+                <p class="pp">Salas de 4 a 20 personas</p>
+                <p class="p-link"><a href="#">Ver más</a></p>
+            </div>
+    </section>
+
+        <!-- SERVICIOS -->
+        <section class="contenedor servicios" id="servicios">
+            <h2>Encargate de tu proyecto,<br>nosotros nos encargamos del resto</h2>
+            <div class="grid servicios-grid">
+                <div class="servicios-ind">
+                    <i class="fas fa-lock"></i>
+                    <h3>Espacios de guardado</h3>
+                </div>
+                <div class="servicios-ind">
+                    <i class="fas fa-print"></i>
+                    <h3>Bajadas y ploteos</h3>
+                </div>
+                <div class="servicios-ind">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Cafetería</h3>
+                </div>
+                <div class="servicios-ind">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Wifi</h3>
+                </div>            
+        </section>
+
+        <!-- UBICACION -->
+    <section class="ubicacion" id="ubicacion">
+        <div class="cartel">
+            <i class="far fa-map"></i>
+            <h2>Estamos en Caballito</h2>
+            <h3>Bogotá 1852</h3>
+            <a href="https://goo.gl/maps/nw22Yc6SEfgnsBbJA" target="_blank"><button class="btn btn-borde">Ver en el mapa</button></a>
+        </div>
+        <div>
+            <img src="img/ubicacion.png" alt="">
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="form" id="formulario">
+        <div class="form-left">
+            <div class="form-titulo">
+                <h2>Dejanos tus datos y te llamamos...</h2>
+            </div>
+            <form action="" method="GET" class="form-posta">
+                <div class="form-input">
+                    <label for="name">Nombre</label>
+                    <input id='name' name='name' type='text'/ required>
+                </div>
+                <div class="form-input">
+                    <label for="number">Teléfono</label>
+                    <input id='phone' name='phone' type='number'/ required>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input id='email' name='email' type='email'/ required>
+                </div>
+
+                <div class="form-radio-grid">
+                    <p class="form-titulo radio">Tengo interés en:</p>
+                    <div class="form-radio">
+                        <input type="radio" id="taller" name="interes" value="taller" checked>
+                        <label for="taller" class="radio-label">Taller</label>
+                    </div>
+                    <div class="form-radio">
+                        <input type="radio" id="taller" name="interes" value="coworking">
+                        <label for="coworking" class="radio-label">Coworking</label>
+                    </div>
+                    <div class="form-radio">
+                        <input type="radio" id="taller" name="interes" value="cursos">
+                        <label for="cursos" class="radio-label">Cursos</label>
+                    </div>
+                </div>
+                    <button class="btn btn-enviar">Enviar</button>
+            </form>
+        </div>
+        <div class="form-right">
+            <div class="social-titulo">
+                <h2>O contactanos de una!</h2>
+            </div>
+            <div class="form-social">
+                <div class="social-grupo">
+                    <div class="social-icono">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="social-texto">
+                        <p>Mandanos un<br>WhatsApp</p>
+                    </div>
+                </div>
+                <div class="social-grupo">
+                    <div class="social-icono">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social-texto">
+                        <p>Hablemos por<br>Facebook Chat</p>
+                    </div>
+                </div>
+                <div class="social-grupo">
+                    <div class="social-icono">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="social-texto">
+                        <p>Llamanos al<br>11 2233 4455</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contenedor-footer">
+            <div>
+                <img class="logo" src="img/engranaje blanco.png" alt="">
+            </div>
+            <div class="links-footer">
+                <h4>Membresias</h4>
+                <a href="#">Pase completo</a>
+                <a href="#">Pase por sector</a>
+            </div>
+            <div class="links-footer">
+                <h4>Productos y Servicios</h4>
+                <a href="#">Taller</a>
+                <a href="#">Coworking</a>
+                <a href="#">Cursos</a>
+                <a href="#">Sala de reuniones</a>
+                <a href="#">Pañol y librería</a>
+                <a href="#">Bajadas y ploteos</a>
+            </div>
+            <div class="links-footer">
+                <h4>Contacto</h4>
+                <a href="#">hola@sinergia.com</a>
+                <a href="#">11 2233 4455</a>
+                <a href="https://goo.gl/maps/nw22Yc6SEfgnsBbJA" target="_blank">Bogotá 1852</a>
+            </div>
+            <div class="links-footer">
+                <div class="social social-footer">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="main.js"></script>
+</body>
+</html>
