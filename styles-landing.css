@@ -1,0 +1,316 @@
+/* HEADER */
+.header {
+    height: 100vh;
+    z-index: 1;
+}
+.header-photo img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+}
+.header-texto {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    z-index: 1;
+}
+.header-texto h1 {
+    font-family: 'Anton', sans-serif; /* solo bold */
+    color: var(--white);
+    font-size: 80px;
+    line-height: 80px;
+}
+.header-texto h2 {
+    font-size: 30px;
+    color: var(--white);
+}
+.btn {
+    cursor: pointer;
+    background-color: var(--accent-primary);
+    color: var(--white);
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: var(--accent-hover);
+}
+/* ABOUT */
+.about  {
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+    background-color: var(--grey-light);
+}
+.about-texto, .salas-texto {
+    width: 50%;
+    margin-top: 15vh;
+    text-align: center;
+}
+.about-texto h1 {
+    font-size: 40px;
+}
+.about-gid-icons i {
+    font-size: 30px;
+}
+.about-texto h3 {
+    font-size: 20px;
+}
+.about-texto p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.about-grid {
+    margin: auto;
+    display: flex;
+    width: 70%;
+    height: 50%;
+    justify-content: space-around;
+}
+.about-gid-icons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid var(--black);
+    border-radius: 30px;
+}
+.about-gid-icons h3, .about-gid-icons p, .about-btn {
+    margin-top: -5vh;
+    justify-items: center;
+}
+.about-gid-icons p {
+    width: 80%;
+    margin: 0 10%;
+}
+/* SALAS */
+.salas {
+    display: flex;
+    flex-direction: column;
+}
+.salas h1 {
+    height: 20vh;
+    font-size: 40px;
+}
+.salas-grid {
+    display: flex;
+    width: 80%;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.salas-ind {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 60vh;
+    border-radius: 20px;
+    align-items: center;
+    background-color: var(--grey-light);
+}
+.salas-ind img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.salas-ind h3 {
+    padding-top: 40px;
+    text-align: center;
+    color: var(--accent-primary);
+}
+.salas-ind p {
+    color: var(--grey-dark);
+    margin: auto;
+    width: 80%;
+}
+.salas-btn {
+    margin: 5vh 0;
+}
+/* CURSOS */
+.cursos {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+}
+.cursos-texto {
+    height: 20vh;
+    width: 50%;
+    margin-top: 15vh;
+    text-align: center;
+}
+.cursos-grid {
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cursos-ind {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    align-items: center;
+}
+.cursos-ind img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+.cursos-ind p {
+    margin: 10px 0 5px 0;
+    font-size: 15px;
+}
+
+/* MEDIA QUERIES */
+/* TABLET --- FLUID LAYOUT */
+@media only screen and (max-width: 960px) {
+    /* HEADER */
+    .header-texto {
+        bottom: 5%;
+    }
+    .header-texto h1 {
+        font-size: 70px;
+    }
+    .header-texto h2 {
+        font-size: 25px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    /* ABOUT */
+    .about {
+        height: 140vh;
+    }
+    .about-texto {
+        width: 80%;
+        height: 10vh;
+        margin-top: 10vh;
+    }
+    .about-grid {
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        margin-top: 10vh;
+        justify-content: space-around;
+    }
+    .about-gid-icons {
+        width: 60%;
+        height: 40vh;
+        margin: auto;
+        margin-top: 5vh;
+    }
+    .about-gid-icons h3, .about-gid-icons p, .about-btn {
+        margin-top: 0vh;
+    }
+    /* SALAS */
+    .salas {
+        height: 180vh;
+        width: 100%;
+    }
+    .salas h1 {
+        margin-top: -80vh;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .salas-grid {
+        flex-wrap: wrap;
+    }
+    .salas-ind {
+        width: 40%;
+        margin-bottom: 10vh;
+    }
+    /* CURSOS */
+    .cursos {
+        height: 200vh;
+    }
+    .cursos-texto {
+        margin-top: 0vh;
+        width: 80%;
+    }
+    .cursos-grid {
+        flex-direction: column;
+        height: 180vh;
+        width: 90%;
+    }
+    .cursos-ind {
+        width: 90%;
+    }
+
+}
+/* MOBILE */
+@media only screen and (max-width: 420px) {
+    /* HEADER */
+    .header-texto {
+        top: 5%;
+        left: 10%;
+    }
+    .header-texto h1 {
+        font-size: 60px;
+    }
+    .header-texto h2 {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 20px;
+    }
+    /* ABOUT */
+    .about {
+        height: 220vh;
+    }
+    .about-texto {
+        height: 20%;
+        width: 90%;
+    }
+    .about-texto p {
+        font-size: 18px;
+    }
+    .about-grid {
+        width: 100%;
+        height: 150vh;
+        margin-top: -5vh;
+    }
+    .about-gid-icons {
+        width: 70%;
+        height: 70%;
+    }
+    .about-btn, .about-gid-icons h3, .about-gid-icons i, .about-gid-icons p {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    /* SALAS */
+    .salas {
+        height: 330vh;
+        width: 100%;
+    }
+    .salas h1 {
+        margin-top: -220vh;
+    }
+    .salas-grid {
+        margin-top: 10vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .salas-ind {
+        width: 90%;
+    }
+    /* CURSOS */
+    .cursos {
+        height: 220vh;
+    }
+    .cursos-texto {
+        margin: -10vh 0 10vh 0;
+        width: 80%;
+    }
+    .cursos-grid {
+        height: 180vh;
+    }
+}
