@@ -1,180 +1,239 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-base.css">
-    <link rel="stylesheet" href="styles-landing.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kulim+Park:wght@200;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/675e0bba25.js" crossorigin="anonymous"></script>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-    <title>Sinergia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kulim+Park:wght@200;400;600&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/675e0bba25.js" crossorigin="anonymous"></script>
+  <title>Sinergia | Tu lugar de trabajo</title>
+  <link rel="icon" href="img/icono.ico" />
 </head>
+
 <body>
-    <div class="contenedor">
-        <!-- NAV -->
-        <nav class="navbar">
-            <a href="#header"><img class="logo" src="img/engranaje.png" alt=""></a>
-            <div class="hamburguer">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Qué es?</a></li>
-                <li><a href="#">Membresias</a></li>
-                <li><a href="#">Salas</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <!-- HEADER -->
-        <section class="header">
-            <div class="header-photo">
-                <picture>
-                    <source media="(min-width:401px)" srcset="img/background-big.jpg">
-                    <source media="(max-width:400px)" srcset="img/background-tall.jpg">
-                    <img src="img/background-small.jpg">
-                </picture>
-                <div class="header-texto">
-                    <h1>SINERGIA</h1>
-                    <h2>TU LUGAR DE TRABAJO</h2>
-                    <a href="#formulario"><button class="btn">Reservar</button></a>
-                </div>
-            </div>
-        </section>
-        <!-- ABOUT -->
-        <section class="about">
-            <div class="about-texto">
-                <h1>RECURSOS PARA GENTE QUE HACE</h1>
-                <p>Laborando es una herramienta para la comunidad de emprendedores creativos, diseñadores y gente de oficio. Espacio, comunidad y recursos para potenciar tu emprendimiento o proyecto</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-gid-icons">
-                    <i class="fas fa-pencil-ruler"></i>
-                    <h3>ESPACIO</h3>
-                <p>Talleres, mesas de trabajo, escritorios, espacios adecuados para que hagas</p>
-                <a href="#"><button class="btn">VER MEMBRESÍAS</button></a>
-                </div>
-        
-                <div class="about-gid-icons">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>CAPACITACION</h3>
-                <p>Potencia tus habilidades aprendiendo herramientas nuevas o reforzando viejas para aplicar en tus proyectos</p>
-                <a href="#"><button class="btn">VER CURSOS</button></a>
-                </div>
-        
-                <div class="about-gid-icons">
-                    <i class="fas fa-users"></i>
-                    <h3>COMUNIDAD</h3>
-                <p>Formá parte de esta creciente comunidad de creativos. Informacion, recursos y contactos</p>
-                <a href="#"><button class="btn">FORMA PARTE</button></a>
-                </div>
-            </div>
-            
-        </section>
-        <!-- SALAS -->
-        <section class="salas">
-            <h1>Acompañamos cada etapa de tu proyecto</h1>
-            <div class="salas-grid">
-                <div class="salas-ind">
-                    <img src="img/taller.jpg" alt="">
-                    <h3>Taller</h3>
-                    <p>Mesadas amplias con<br>herramientas de bancada</p>
-                    <a href="#"><button class="btn salas-btn">VER</button></a>
-                </div>
-                <div class="salas-ind">
-                    <img src="img/coworking.jpg" alt="">
-                    <h3>Coworking</h3>
-                    <p>Puestos de trabajo flexibles</p>
-                    <a href="#"><button class="btn salas-btn">VER</button></a>
-                </div>
-                <div class="salas-ind">
-                    <img src="img/reunion.jpg" alt="">
-                    <h3>Salas de reunión</h3>
-                    <p>Salas de 4 a 20 personas</p>
-                    <a href="#"><button class="btn salas-btn">VER</button></a>
-                </div>
-                <div class="salas-ind">
-                    <img src="img/pañol.jpg" alt="">
-                    <h3>Pañol</h3>
-                    <p>Alquiler de herramientas<br>y venta de materiales</p>
-                    <a href="#"><button class="btn salas-btn">VER</button></a>
-                </div>
-            </div>
-            
-        </section>
-        <!-- CURSOS -->
-        
-    <section class="cursos">
-        <div class="cursos-texto">
-            <h1>ADQUIRI O REFORZA TUS CONOCIMIENTOS</h1>
-            <p>Laborando es una herramienta para la comunidad de emprendedores creativos, diseñadores y gente de oficio. Espacio, comunidad y recursos para potenciar tu emprendimiento o proyecto</p>
-        </div>
-        <div class="cursos-grid">
-            <div class="cursos-ind">
-                <img src="img/solid.jpg" alt="">
-                <p>SolidWorks inicial</p>
-                <h3>$4000</h3>
-            </div>
-            <div class="cursos-ind">
-                <img src="img/herreria.jpg" alt="">
-                <p>Herreria</p>
-                <h3>$6300</h3>
-            </div>
-            <div class="cursos-ind">
-                <img src="img/carpinteria.jpg" alt="">
-                <p>Carpintería maciza</p>
-                <h3>$6500</h3>
-            </div>
-        </div>
-    </section>
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer-links">
-                <h3>Productos y servicios</h3>
-                <ul>
-                    <li>Taller</li>
-                    <li>Coworking</li>
-                    <li>Cursos</li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h3>Membresías</h3>
-                <ul>
-                    <li>Pase por día</li>
-                    <li>Pase por sector</li>
-                    <li>Pase completo</li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h3>Contacto</h3>
-                <ul>
-                    <li><a href="mailto:hola@sinergia.com">hola@sinergia.com</a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank">11 2345 6789</a></li>
-                    <li><a href="https://goo.gl/maps/nw22Yc6SEfgnsBbJA" target="_blank">Bogotá 1852</a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h3>Seguinos</h3>
-                <div class="footer-social">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-                        
-                    
-            </div>
-        </footer>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light navbar-expand-lg bg-dark fixed-top">
+    <a class="navbar-brand text-white" href="#header">
+      <img src="img/engranaje-blanco.png" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
+        loading="lazy">
+      Sinergia
+    </a>
+    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link text-white" href="about.html">Qué es Sinergia?</a>
+        <a class="nav-link text-white" href="membresias.html">Membresías</a>
+        <a class="nav-link text-white" href="salas.html">Salas</a>
+        <a class="nav-link text-white" href="cursos.html">Cursos</a>
+        <a class="nav-link text-white mr-5" href="contacto.html">Contacto</a>
+      </div>
     </div>
-    <script src="main.js"></script>
+  </nav>
+  <!-- HEADER -->
+  <section class="header" id="header">
+    <div class="header-photo">
+      <picture>
+        <source media="(min-width:401px)" srcset="img/background-big.jpg" />
+        <source media="(max-width:400px)" srcset="img/background-tall.jpg" />
+        <img src="img/background-small.jpg" />
+      </picture>
+      <div class="header-texto">
+        <h1 class="text-white">SINERGIA</h1>
+        <h2 class="text-white">TU LUGAR DE TRABAJO</h2>
+        <a href="contacto.html"><button class="btn btn-reservar">Reservar</button></a>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="about container-fluid bg-light">
+    <div class="row justify-content-center text-center pt-5 ml-5 mr-5">
+      <h2 class="pt-5 pb-2">RECURSOS PARA GENTE QUE HACE</h2>
+      <p class="container text-center pb-5">
+        Sinergia es un taller de trabajo colaborativo. Espacio, comunidad y recursos para potenciar tus proyectos
+      </p>
+    </div>
+    <div class="row pb-5 justify-content-center">
+      <div class="card about-cards m-3" style="width: 25rem;">
+        <div class="card-body text-center">
+          <i class="fas fa-pencil-ruler mb-3"></i>
+          <h5 class="card-title">ESPACIO</h5>
+          <p class="card-text">Talleres, mesas de trabajo, escritorios, espacios adecuados para que hagas.</p>
+          <a href="membresias.html" class="btn mt-4">Ver membresias</a>
+        </div>
+      </div>
+      <div class="card about-cards m-3" style="width: 25rem;">
+        <div class="card-body text-center">
+          <i class="fas fa-graduation-cap mb-3"></i>
+          <h5 class="card-title">CAPACITACION</h5>
+          <p class="card-text">Potencia tus habilidades aprendiendo herramientas nuevas o
+            reforzando viejas para aplicar en tus proyectos.</p>
+          <a href="cursos.html" class="btn">Ver cursos</a>
+        </div>
+      </div>
+      <div class="card about-cards m-3" style="width: 25rem;">
+        <div class="card-body text-center">
+          <i class="fas fa-users mb-3"></i>
+          <h5 class="card-title">COMUNIDAD</h5>
+          <p class="card-text">Formá parte de esta creciente comunidad de creativos. Informacion,
+            recursos y contactos.</p>
+          <a href="club.html" class="btn mt-4">Forma parte</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SALAS -->
+  <section class="salas bg-light container-fluid">
+    <div class="row justify-content-center text-center p-5">
+      <h1>Acompañamos cada etapa de tu proyecto</h1>
+    </div>
+    <div class="row pb-5 justify-content-center">
+      <div class="card card-salas ml-2 mr-2 mb-4 text-center" style="width: 20rem;">
+        <img src="img/taller.jpg" class="card-img-top card-img-salas" alt="espacio de taller">
+        <div class="card-body">
+          <h5 class="card-title">Taller</h5>
+          <p class="card-text">Mesadas amplias con herramientas de bancada</p>
+          <a href="salas.html" class="btn">Ver</a>
+        </div>
+      </div>
+      <div class="card card-salas ml-2 mr-2 mb-4 text-center" style="width: 20rem;">
+        <img src="img/coworking.jpg" class="card-img-top card-img-salas" alt="espacio de coworking">
+        <div class="card-body">
+          <h5 class="card-title">Coworking</h5>
+          <p class="card-text">Puestos de trabajo flexibles</p>
+          <a href="salas.html" class="btn mt-4">Ver</a>
+        </div>
+      </div>
+      <div class="card card-salas ml-2 mr-2 mb-4 text-center" style="width: 20rem;">
+        <img src="img/reunion.jpg" class="card-img-top card-img-salas" alt="sala de reunion">
+        <div class="card-body">
+          <h5 class="card-title">Salas de reunión</h5>
+          <p class="card-text">Salas de 4 a 20 personas</p>
+          <a href="salas.html" class="btn mt-4">Ver</a>
+        </div>
+      </div>
+      <div class="card card-salas ml-2 mr-2 mb-4 text-center" style="width: 20rem;">
+        <img src="img/pañol.jpg" class="card-img-top card-img-salas" alt="pañol">
+        <div class="card-body">
+          <h5 class="card-title">Pañol</h5>
+          <p class="card-text">Alquiler de herramientas y venta de materiales</p>
+          <a href="salas.html" class="btn">Ver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SERVICIOS -->
+  <section class="servicios container-fluid">
+    <h2 class="text-white text-center p-5">Encargate de tu proyecto, nosotros nos encargamos del resto</h2>
+    <div class="row justify-content-center align-items-center">
+      <div class="card servicios-card bg-transparent text-center" style="width: 15rem;">
+        <div class="card-body bg-transparent">
+          <i class="fas fa-lock text-white"></i>
+          <h3 class="text-white mt-2">Espacios de guardado</h3>
+        </div>
+      </div>
+      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
+        <div class="card-body bg-transparent">
+          <i class="fas fa-print text-white"></i>
+          <h3 class="text-white mt-2">Bajadas y ploteos</h3>
+        </div>
+      </div>
+      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
+        <div class="card-body bg-transparent">
+          <i class="fas fa-coffee text-white"></i>
+          <h3 class="text-white mt-2">Cafetería</h3>
+        </div>
+      </div>
+      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
+        <div class="card-body bg-transparent">
+          <i class="fas fa-users text-white"></i>
+          <h3 class="text-white mt-2">Comunidad</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="card servicios-card bg-transparent text-center" style="width: 15rem;">
+        <div class="card-body bg-transparent">
+          <i class="fas fa-fingerprint text-white"></i>
+          <h3 class="text-white mt-2">Control de acceso</h3>
+        </div>
+      </div>
+      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
+        <div class="card-body bg-transparent">
+          <i class="fas fa-handshake text-white"></i>
+          <h3 class="text-white mt-2">Salas de reunion</h3>
+        </div>
+      </div>
+      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
+        <div class="card-body bg-transparent">
+          <i class="fas fa-concierge-bell text-white"></i>
+          <h3 class="text-white mt-2">Recepcionista</h3>
+        </div>
+      </div>
+      <div class="card servicios-card bg-transparent text-center mt-5 pb-5" style="width: 12rem;">
+        <div class="card-body bg-transparent">
+          <i class="fas fa-wifi text-white"></i>
+          <h3 class="text-white mt-2">Wifi</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark pt-5 pl-5 pr-5 pb-2">
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
+        <a href="index.html"><img src="img/engranaje-blanco.png" width="30" height="30" class="d-inline-block align-top"
+            alt="logo" loading="lazy">
+          Sinergia</a>
+      </div>
+      <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
+        <h5 class="text-white">Productos y servicios</h5>
+        <a href="salas.html">Taller</a>
+        <a href="salas.html">Coworking</a>
+        <a href="cursos.html">Cursos</a>
+      </div>
+      <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
+        <h5 class="text-white">Membresías</h5>
+        <a href="membresias.html">Pase por día</a>
+        <a href="membresias.html">Pase por sector</a>
+        <a href="membresias.html">Pase completo</a>
+      </div>
+      <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
+        <h5 class="text-white">Contacto</h5>
+        <a href="mailto:hola@sinergia.com">hola@sinergia.com</a>
+        <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank">11 2345-6789</a>
+        <a href="https://goo.gl/maps/nw22Yc6SEfgnsBbJA" target="_blank">Bogotá 1852</a>
+      </div>
+      <div class="col-xs-12 col-lg-6 col-xl-2 text-center pb-5 text-white">
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i
+            class="fab fa-instagram ml-2 iconos-footer"></i></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank"><i
+            class="fab fa-linkedin-in ml-2 iconos-footer"></i></a>
+        <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter ml-2 iconos-footer"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i
+            class="fab fa-facebook-square ml-2 iconos-footer"></i></a>
+      </div>
+    </div>
+    <p class="pt-4 justify-content-center d-flex text-white text-center">© 2020 Sinergia Coworking. Todos los
+      derechos
+      reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
