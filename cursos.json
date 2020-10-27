@@ -1,0 +1,117 @@
+{
+    "cursos": [
+        {
+            "id": 1,
+            "titulo": "Carpintería de madera maciza: nivel inicial",
+            "precio": 100,
+            "img": "./img/maciza1.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 2,
+            "titulo": "Carpintería de madera maciza: nivel intermedio",
+            "precio": 100,
+            "img": "./img/maciza2.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 3,
+            "titulo": "Carpintería de madera en placas: nivel inicial",
+            "precio": 100,
+            "img": "./img/placa1.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 4,
+            "titulo": "Carpintería de madera en placas: nivel intermedio",
+            "precio": 100,
+            "img": "./img/placa2.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 5,
+            "titulo": "Mecánica de bicicletas",
+            "precio": 100,
+            "img": "./img/mecanica.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 6,
+            "titulo": "Contrucción en steel frame",
+            "precio": 100,
+            "img": "./img/construccion.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 7,
+            "titulo": "Herrería",
+            "precio": 100,
+            "img": "./img/herreria.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 8,
+            "titulo": "Plomería",
+            "precio": 100,
+            "img": "./img/plomeria.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 9,
+            "titulo": "Autocad",
+            "precio": 100,
+            "img": "./img/cad.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 10,
+            "titulo": "SketchUp",
+            "precio": 100,
+            "img": "./img/skp.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 11,
+            "titulo": "SolidWorks",
+            "precio": 100,
+            "img": "./img/solid.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 12,
+            "titulo": "Rhinoceros",
+            "precio": 100,
+            "img": "./img/rhino.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 13,
+            "titulo": "Photoshop",
+            "precio": 100,
+            "img": "./img/ps.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 14,
+            "titulo": "Illustrator",
+            "precio": 100,
+            "img": "./img/ai.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 15,
+            "titulo": "Dibujo",
+            "precio": 100,
+            "img": "./img/dibujo.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        },
+        {
+            "id": 16,
+            "titulo": "Impresión 3d",
+            "precio": 100,
+            "img": "./img/imp3d.jpg",
+            "href": "carpinteria-maciza-inicial.html"
+        }
+        
+    ]
+}

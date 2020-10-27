@@ -9,7 +9,9 @@
   --grey-light: #e6e6e6;
   --grey-dark: rgb(139, 139, 139);
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
   color: var(--black);
 }
@@ -34,6 +36,18 @@ p {
 .btn-reservar:hover {
   background-color: transparent;
   border-color: var(--white);
+}
+button.mercadopago-button {
+  color: #fff;
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+button.mercadopago-button:hover {
+  color: #fff;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  animation-name: salto;
+  animation-duration: 0.4s;
 }
 /***** NAVBAR *****/
 .nav-link {
@@ -75,7 +89,7 @@ a:hover {
   z-index: 1;
 }
 .header-texto h1 {
-  font-family: 'Anton', sans-serif; /* solo bold */
+  font-family: "Anton", sans-serif; /* solo bold */
   font-size: 70px;
   line-height: 70px;
 }
@@ -88,11 +102,13 @@ a:hover {
   text-align: center;
   border-radius: 20px;
 }
-.about-cards:hover, .servicios-card:hover{
+.about-cards:hover,
+.servicios-card:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in;
 }
-.about-cards i, .icono-color {
+.about-cards i,
+.icono-color {
   font-size: 30px;
   color: var(--accent-primary);
 }
@@ -101,14 +117,18 @@ a:hover {
   border: none;
   border-radius: 20px;
 }
-.card-salas:hover, .card-cursos:hover {
+.card-salas:hover,
+.card-cursos:hover {
   transform: scale(1.05);
   transition: 0.1s ease-in;
 }
-.card-img-salas, .card-img-cursos {
+.card-img-salas,
+.card-img-cursos {
   border-radius: 20px 20px 0 0;
 }
-.card-img-salas:hover, .card-img-cursos:hover, .salas-img:hover {
+.card-img-salas:hover,
+.card-img-cursos:hover,
+.salas-img:hover {
   filter: grayscale(100%);
   transition: 0.5s ease-in;
 }
@@ -168,7 +188,10 @@ span {
   z-index: 1;
   border-radius: 25px;
 }
-.card-membresias:hover p, .card-membresias:hover h3, .card-membresias:hover h6, .card-membresias:hover i {
+.card-membresias:hover p,
+.card-membresias:hover h3,
+.card-membresias:hover h6,
+.card-membresias:hover i {
   color: #fff;
 }
 .card-membresias:hover .btn-membresia {
