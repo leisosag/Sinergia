@@ -35,9 +35,19 @@
         </div>
     </nav>
     <!-- CURSOS -->
-    <section class="salas bg-light container-fluid pt-5" id="cursos">
+    <section class="salas container pt-5" id="cursos">
         <h2 class="justify-content-center d-flex pt-5">Nuestros cursos</h2>
-        <div class="row pb-2 justify-content-center" id="contenedor-cursos"></div>
+        <div class="row pb-2 justify-content-center" id="contenedor-cursos">
+            <div class="card card-cursos bg-light ml-2 mr-2 mb-4 mt-5" style="width: 20rem;">
+                <img src="" class="card-img-top" alt="${curso.titulo}">
+                <div class="card-body text-center">
+                    <h5 class="card-title">${curso.titulo}</h5>
+                    <p class="card-text">$${curso.precio}</p>
+                    <a href="${curso.href}" class="btn mt-4">Ver más</a>
+                    <a href="${curso.id}" class="btn btn-lleno mt-4" id="${curso.id}">Comprar</a>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- FOOTER -->
     <footer class="container-fluid bg-dark pt-5 pl-5 pr-5 pb-2">
@@ -80,7 +90,7 @@
             reservados.</p>
     </footer>
 
-    <script src="cursos.js"></script>
+    <script src="js/cursos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

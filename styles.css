@@ -1,41 +1,71 @@
-* {
-  font-family: "Kulim Park", sans-serif; /* 200 light, 400 regular, 600 semi bold */
-}
 :root {
-  --accent-primary: #7f3ab2;
+  --accent-primary: #a72cff;
   --accent-hover: #550f89;
-  --black: #181818;
-  --white: #f0f0f0;
+  --black: #333;
+  --white: #fafafa;
   --grey-light: #e6e6e6;
   --grey-dark: rgb(139, 139, 139);
+
+  --rosa: #ff48ca;
+  --rosa-claro: #ff00f2;
+  --verde: #4f5;
+  --verde-claro: #dffe00;
+  --cyan: #0ff;
+  --cyan-claro: #00e1e1;
+  --violeta: #8215bc;
+  --violeta-claro: #c08add;
+  --naranja: #f90;
+  --naranja-claor: #f8c100;
+  --negro-texto: #212529;
+  --negro-fondo: #333;
+  --blanco: #fff;
+  --gris-claro: #f0f0f0;
+  --gris-oscuro: #666;
+  /*
+  violeta main
+  rosa grafico
+  verde arquitectura
+  cyan industrial
+  naranja imagen y sonido
+  */
+}
+body {
+  background-color: var(--blanco);
+  font-family: "Kulim Park", sans-serif; /* 200 light, 400 regular, 600 semi bold */
+  color: var(--negro-texto);
+  font-weight: 400;
 }
 h1,
-h2,
-h3 {
-  font-weight: 400;
-  color: var(--black);
-}
-p {
-  font-weight: 200;
-  color: var(--grey-dark);
+h2 {
+  font-family: "Anton", sans-serif; /* solo bold */
 }
 /***** BOTONES *****/
 .btn {
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
+  border-color: var(--gris-oscuro);
+  color: var(--gris-oscuro);
+}
+.accent:hover .btn {
+  border-color: var(--violeta-claro);
+  color: var(--violeta-claro);
 }
 .btn:hover {
-  background-color: var(--accent-primary);
-  border-color: var(--accent-primary);
-  color: var(--white);
+  background-color: var(--violeta);
+  border-color: var(--violeta);
+  color: var(--white) !important;
 }
-.btn-reservar {
+.btn-reservar,
+.btn-lleno {
   background-color: var(--accent-primary);
   color: var(--white);
 }
 .btn-reservar:hover {
   background-color: transparent;
   border-color: var(--white);
+}
+.btn-lleno:hover {
+  background-color: transparent;
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
 }
 button.mercadopago-button {
   color: #fff;
@@ -46,24 +76,35 @@ button.mercadopago-button:hover {
   color: #fff;
   background-color: var(--secondary);
   border-color: var(--secondary);
-  animation-name: salto;
-  animation-duration: 0.4s;
 }
 /***** NAVBAR *****/
-.nav-link {
+.nav-link,
+.navbar-brand {
   padding-top: 5px;
-  color: var(--white);
+  color: var(--negro-texto);
 }
-.nav-link:hover {
-  border-top: 1px solid var(--white);
+.nav-link {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.1s;
+}
+.nav-link:hover,
+.nav-link:focus {
+  background-size: 100% 1px;
 }
 /***** FOOTER *****/
+#footer-contenedor {
+  background: var(--negro-fondo);
+}
 .iconos-footer {
   font-size: 20px;
 }
 .iconos-footer:hover {
-  color: var(--grey-dark);
-  transition: 0.3s;
+  color: var(--violeta);
+  transition: 0.1s;
 }
 a {
   text-decoration: none;
@@ -71,8 +112,8 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: var(--grey-dark);
-  transition: 0.3s;
+  color: var(--violeta);
+  transition: 0.1s;
 }
 /***** HEADER *****/
 .header-photo img {
@@ -84,12 +125,12 @@ a:hover {
 }
 .header-texto {
   position: absolute;
+  text-align: right;
   bottom: 10%;
-  right: 10%;
+  right: 12%;
   z-index: 1;
 }
 .header-texto h1 {
-  font-family: "Anton", sans-serif; /* solo bold */
   font-size: 70px;
   line-height: 70px;
 }
@@ -97,30 +138,59 @@ a:hover {
   font-size: 20px;
 }
 /***** ABOUT *****/
-.about-cards {
-  height: 40vh;
-  text-align: center;
-  border-radius: 20px;
+#about-contenedor {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about-cards:hover,
-.servicios-card:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease-in;
+.card-title {
+  color: var(--black);
+  font-weight: 700;
+}
+.card-text {
+  color: #666;
+}
+.about-cards {
+  height: 18rem;
+  text-align: center;
+  border-radius: 0rem;
+  border: 1px solid #666;
+}
+.about-cards:hover {
+  border: 1px solid #666;
+}
+.accent:hover {
+  /*transform: scale(1.02);
+  transition: 0.1s ease-in;*/
+  background-color: var(--black);
+}
+.accent:hover i {
+  color: var(--accent-primary);
+}
+.accent:hover h5,
+.accent:hover p {
+  color: var(--white);
 }
 .about-cards i,
 .icono-color {
-  font-size: 30px;
-  color: var(--accent-primary);
+  font-size: 1.3rem;
+  color: #666;
+}
+.about-cards i:hover,
+.icono-color:hover {
 }
 /***** SALAS *****/
+#salas-contenedor {
+  background: var(--white);
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card-salas {
   border: none;
   border-radius: 20px;
-}
-.card-salas:hover,
-.card-cursos:hover {
-  transform: scale(1.05);
-  transition: 0.1s ease-in;
 }
 .card-img-salas,
 .card-img-cursos {
@@ -136,8 +206,12 @@ a:hover {
   width: 100%;
 }
 /***** SERVICIOS *****/
-.servicios {
+#servicios-contenedor {
   background-color: var(--accent-primary);
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .servicios-card {
   border: none;

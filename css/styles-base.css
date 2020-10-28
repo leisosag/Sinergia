@@ -1,0 +1,137 @@
+:root {
+  --accent-primary: #a72cff;
+  --accent-hover: #550f89;
+  --black: #333;
+  --white: #fafafa;
+  --grey-light: #e6e6e6;
+  --grey-dark: rgb(139, 139, 139);
+
+  --rosa: #ff48ca;
+  --rosa-claro: #ff00f2;
+  --verde: #4f5;
+  --verde-claro: #dffe00;
+  --cyan: #0ff;
+  --cyan-claro: #00e1e1;
+  --violeta: #8215bc;
+  --violeta-claro: #c08add;
+  --naranja: #f90;
+  --naranja-claor: #f8c100;
+  --negro-texto: #212529;
+  --negro-fondo: #333;
+  --blanco: #fff;
+  --gris-claro: #f0f0f0;
+  --gris-oscuro: #666;
+  /*
+    violeta main
+    rosa grafico
+    verde arquitectura
+    cyan industrial
+    naranja imagen y sonido
+    */
+}
+body {
+  background-color: var(--blanco);
+  font-family: "Kulim Park", sans-serif; /* 200 light, 400 regular, 600 semi bold */
+  color: var(--negro-texto);
+  font-weight: 400;
+}
+h1,
+h2 {
+  font-family: "Anton", sans-serif; /* solo bold */
+}
+.texto-descripcion,
+.card-title {
+  font-size: 1.2rem;
+}
+/***** BOTONES *****/
+.btn {
+  border-color: var(--gris-oscuro);
+  color: var(--gris-oscuro);
+}
+.accent:hover .btn {
+  border-color: var(--violeta-claro);
+  color: var(--violeta-claro);
+}
+.btn:hover {
+  background-color: var(--violeta);
+  border-color: var(--violeta);
+  color: var(--white) !important;
+}
+.btn-reservar,
+.btn-lleno {
+  background-color: var(--accent-primary);
+  color: var(--white);
+}
+.btn-reservar:hover {
+  background-color: transparent;
+  border-color: var(--white);
+}
+.btn-lleno:hover {
+  background-color: transparent;
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+button.mercadopago-button {
+  color: #fff;
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+button.mercadopago-button:hover {
+  color: #fff;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+/***** NAVBAR *****/
+.nav-link,
+.navbar-brand {
+  padding-top: 5px;
+  color: var(--negro-texto);
+}
+.nav-link {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.1s;
+}
+.nav-link:hover,
+.nav-link:focus {
+  background-size: 100% 1px;
+}
+/***** FOOTER *****/
+#footer-contenedor {
+  background: var(--negro-fondo);
+}
+.iconos-footer {
+  font-size: 20px;
+}
+.iconos-footer:hover {
+  color: var(--violeta);
+  transition: 0.1s;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--violeta);
+  transition: 0.1s;
+}
+/***** MOBILE *****/
+@media only screen and (max-width: 420px) {
+  .header-texto {
+    top: 15%;
+    left: 5%;
+  }
+  .header-texto h2 {
+    font-size: 20px;
+  }
+  .contacto-form h1 {
+    font-size: 30px;
+  }
+  .altura-textarea {
+    min-height: 10vh;
+  }
+}

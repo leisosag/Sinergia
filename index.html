@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles-base.css" />
+  <link rel="stylesheet" href="css/styles-landing.css" />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kulim+Park:wght@200;400;600&display=swap"
     rel="stylesheet" />
   <script src="https://kit.fontawesome.com/675e0bba25.js" crossorigin="anonymous"></script>
@@ -16,35 +17,36 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-light navbar-expand-lg bg-dark fixed-top">
-    <a class="navbar-brand text-white" href="#header">
-      <img src="img/engranaje-blanco.png" width="30" height="30" class="d-inline-block align-top ml-5" alt="logo"
-        loading="lazy">
-      Sinergia
-    </a>
-    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #fff;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/engranaje.png" width="30" height="30" class="d-inline-block align-top" alt="logo"
+            loading="lazy">Sinergia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-link text-white" href="about.html">Qué es Sinergia?</a>
-        <a class="nav-link text-white" href="membresias.html">Membresías</a>
-        <a class="nav-link text-white" href="salas.html">Salas</a>
-        <a class="nav-link text-white" href="cursos.html">Cursos</a>
-        <a class="nav-link text-white mr-5" href="contacto.html">Contacto</a>
-      </div>
+        <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="about.html">Qué es Sinergia?</a>
+            <a class="nav-link" href="membresias.html">Membresías</a>
+            <a class="nav-link" href="salas.html">Salas</a>
+            <a class="nav-link" href="cursos.html">Cursos</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+        </div>
     </div>
-  </nav>
+    </div>
+    
+</nav>
   <!-- HEADER -->
   <section class="header" id="header">
     <div class="header-photo">
       <picture>
-        <source media="(min-width:401px)" srcset="img/background-big.jpg" />
-        <source media="(max-width:400px)" srcset="img/background-tall.jpg" />
-        <img src="img/background-small.jpg" />
+        <source media="(min-width:401px)" srcset="img/background-nuevo.jpg" />
+        <source media="(max-width:400px)" srcset="img/background-nuevo.jpg" />
+        <img src="img/background-nuevo.jpg" />
       </picture>
-      <div class="header-texto">
+      <div class="header-texto container">
         <h1 class="text-white">SINERGIA</h1>
         <h2 class="text-white">TU LUGAR DE TRABAJO</h2>
         <a href="contacto.html"><button class="btn btn-reservar">Reservar</button></a>
@@ -52,177 +54,215 @@
     </div>
   </section>
   <!-- ABOUT -->
-  <section class="about container-fluid bg-light">
-    <div class="row justify-content-center text-center pt-5 ml-5 mr-5">
-      <h2 class="pt-5 pb-2">RECURSOS PARA GENTE QUE HACE</h2>
-      <p class="container text-center pb-5">
-        Sinergia es un taller de trabajo colaborativo. Espacio, comunidad y recursos para potenciar tus proyectos
-      </p>
-    </div>
-    <div class="row pb-5 justify-content-center">
-      <div class="card about-cards m-3" style="width: 25rem;">
-        <div class="card-body text-center">
-          <i class="fas fa-pencil-ruler mb-3"></i>
-          <h5 class="card-title">ESPACIO</h5>
-          <p class="card-text">Talleres, mesas de trabajo, escritorios, espacios adecuados para que hagas.</p>
-          <a href="membresias.html" class="btn mt-4">Ver membresias</a>
-        </div>
+  <section id="about-contenedor">
+    <div class="container">
+      <div class="row justify-content-center text-center pt-5 ml-5 mr-5">
+        <h2 class="pt-5 pb-2 text-uppercase">Recursos para diseñadores</h2>
+        <p class="text-center pb-5 texto-descripcion">
+          Sinergia es un taller de diseño colaborativo. Espacio, comunidad y recursos para potenciar tus proyectos.
+        </p>
       </div>
-      <div class="card about-cards m-3" style="width: 25rem;">
-        <div class="card-body text-center">
-          <i class="fas fa-graduation-cap mb-3"></i>
-          <h5 class="card-title">CAPACITACION</h5>
-          <p class="card-text">Potencia tus habilidades aprendiendo herramientas nuevas o
-            reforzando viejas para aplicar en tus proyectos.</p>
-          <a href="cursos.html" class="btn">Ver cursos</a>
+      <div class="row pb-5 justify-content-center">
+        <div class="col-lg-4 col-xs-12">
+          <div class="card about-cards accent m-1">
+            <div class="card-body d-flex flex-column justify-content-center text-left m-2">
+              <i class="fas fa-pencil-ruler mb-3"></i>
+              <h5 class="card-title">ESPACIO</h5>
+              <p class="card-text">Talleres, mesas de trabajo, escritorios, espacios adecuados para diseñar.</p>
+              <a href="membresias.html" class="btn">Ver membresias</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card about-cards m-3" style="width: 25rem;">
-        <div class="card-body text-center">
-          <i class="fas fa-users mb-3"></i>
-          <h5 class="card-title">COMUNIDAD</h5>
-          <p class="card-text">Formá parte de esta creciente comunidad de creativos. Informacion,
-            recursos y contactos.</p>
-          <a href="club.html" class="btn mt-4">Forma parte</a>
+        <div class="col-lg-4 col-xs-12">
+          <div class="card about-cards accent m-1">
+            <div class="card-body d-flex flex-column justify-content-center text-left m-2">
+              <i class="fas fa-pencil-ruler mb-3"></i>
+              <h5 class="card-title">CAPACITACION</h5>
+              <p class="card-text">Potencia tus habilidades aprendiendo herramientas nuevas.</p>
+              <a href="cursos.html" class="btn">Ver cursos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+          <div class="card about-cards accent m-1">
+            <div class="card-body d-flex flex-column justify-content-center text-left m-2">
+              <i class="fas fa-users mb-3"></i>
+              <h5 class="card-title">COMUNIDAD</h5>
+              <p class="card-text">Formá parte de esta creciente comunidad de creativos.</p>
+              <a href="club.html" class="btn">Forma parte</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- SALAS -->
-  <section class="salas bg-light container-fluid">
-    <div class="row justify-content-center text-center p-5">
-      <h1>Acompañamos cada etapa de tu proyecto</h1>
-    </div>
-    <div class="row pb-5 justify-content-center">
-      <div class="card card-salas ml-2 mr-2 mb-4 text-center" style="width: 20rem;">
-        <img src="img/taller.jpg" class="card-img-top card-img-salas" alt="espacio de taller">
-        <div class="card-body">
-          <h5 class="card-title">Taller</h5>
-          <p class="card-text">Mesadas amplias con herramientas de bancada</p>
-          <a href="salas.html" class="btn">Ver</a>
-        </div>
+  <section id="salas-contenedor">
+    <div class="container">
+      <div class="row justify-content-center text-center text-uppercase pt-5 pb-5">
+        <h2>Te acompañamos en cada etapa de tu proyecto</h2>
       </div>
-      <div class="card card-salas ml-2 mr-2 mb-4 text-center" style="width: 20rem;">
-        <img src="img/coworking.jpg" class="card-img-top card-img-salas" alt="espacio de coworking">
-        <div class="card-body">
-          <h5 class="card-title">Coworking</h5>
-          <p class="card-text">Puestos de trabajo flexibles</p>
-          <a href="salas.html" class="btn mt-4">Ver</a>
+      <div class="row pb-5 justify-content-center">
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-salas accent m-1 text-center">
+            <img src="img/taller.jpg" class="card-img-top card-img-salas" alt="espacio de taller">
+            <div class="card-body">
+              <h5 class="card-title">Taller</h5>
+              <p class="card-text">Mesadas amplias con herramientas de bancada</p>
+              <a href="salas.html" class="btn">Ver</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card card-salas ml-2 mr-2 mb-4 text-center" style="width: 20rem;">
-        <img src="img/reunion.jpg" class="card-img-top card-img-salas" alt="sala de reunion">
-        <div class="card-body">
-          <h5 class="card-title">Salas de reunión</h5>
-          <p class="card-text">Salas de 4 a 20 personas</p>
-          <a href="salas.html" class="btn mt-4">Ver</a>
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-salas accent m-1 text-center">
+            <img src="img/coworking.jpg" class="card-img-top card-img-salas" alt="espacio de coworking">
+            <div class="card-body">
+              <h5 class="card-title">Coworking</h5>
+              <p class="card-text">Puestos de trabajo flexibles</p>
+              <a href="salas.html" class="btn mt-4">Ver</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card card-salas ml-2 mr-2 mb-4 text-center" style="width: 20rem;">
-        <img src="img/pañol.jpg" class="card-img-top card-img-salas" alt="pañol">
-        <div class="card-body">
-          <h5 class="card-title">Pañol</h5>
-          <p class="card-text">Alquiler de herramientas y venta de materiales</p>
-          <a href="salas.html" class="btn">Ver</a>
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-salas accent m-1 text-center">
+            <img src="img/reunion.jpg" class="card-img-top card-img-salas" alt="sala de reunion">
+            <div class="card-body">
+              <h5 class="card-title">Salas de reunión</h5>
+              <p class="card-text">Salas de 4 a 20 personas</p>
+              <a href="salas.html" class="btn mt-4">Ver</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card card-salas accent m-1 text-center">
+            <img src="img/pañol.jpg" class="card-img-top card-img-salas" alt="pañol">
+            <div class="card-body">
+              <h5 class="card-title">Pañol</h5>
+              <p class="card-text">Alquiler de herramientas y venta de materiales</p>
+              <a href="salas.html" class="btn">Ver</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- SERVICIOS -->
-  <section class="servicios container-fluid">
-    <h2 class="text-white text-center p-5">Encargate de tu proyecto, nosotros nos encargamos del resto</h2>
+  <section id="servicios-contenedor">
+    <div class="container pb-5">
+      <h2 class="text-white text-uppercase text-center pt-5 pb-5">Encargate de tu proyecto, nosotros nos encargamos del resto</h2>
     <div class="row justify-content-center align-items-center">
-      <div class="card servicios-card bg-transparent text-center" style="width: 15rem;">
-        <div class="card-body bg-transparent">
-          <i class="fas fa-lock text-white"></i>
-          <h3 class="text-white mt-2">Espacios de guardado</h3>
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+        <div class="card servicios-card bg-transparent text-center">
+          <div class="card-body bg-transparent">
+            <i class="fas fa-lock text-white"></i>
+            <h3 class="text-white mt-2">Espacios de guardado</h3>
+          </div>
         </div>
       </div>
-      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
-        <div class="card-body bg-transparent">
-          <i class="fas fa-print text-white"></i>
-          <h3 class="text-white mt-2">Bajadas y ploteos</h3>
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+        <div class="card servicios-card bg-transparent text-center">
+          <div class="card-body bg-transparent">
+            <i class="fas fa-print text-white"></i>
+            <h3 class="text-white mt-2">Bajadas y ploteos</h3>
+          </div>
         </div>
       </div>
-      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
-        <div class="card-body bg-transparent">
-          <i class="fas fa-coffee text-white"></i>
-          <h3 class="text-white mt-2">Cafetería</h3>
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+        <div class="card servicios-card bg-transparent text-center">
+          <div class="card-body bg-transparent">
+            <i class="fas fa-coffee text-white"></i>
+            <h3 class="text-white mt-2">Cafetería</h3>
+          </div>
         </div>
       </div>
-      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
-        <div class="card-body bg-transparent">
-          <i class="fas fa-users text-white"></i>
-          <h3 class="text-white mt-2">Comunidad</h3>
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="card servicios-card bg-transparent text-center">
+          <div class="card-body bg-transparent">
+            <i class="fas fa-users text-white"></i>
+            <h3 class="text-white mt-2">Comunidad</h3>
+          </div>
         </div>
       </div>
     </div>
     <div class="row justify-content-center align-items-center">
-      <div class="card servicios-card bg-transparent text-center" style="width: 15rem;">
-        <div class="card-body bg-transparent">
-          <i class="fas fa-fingerprint text-white"></i>
-          <h3 class="text-white mt-2">Control de acceso</h3>
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+        <div class="card servicios-card bg-transparent text-center">
+          <div class="card-body bg-transparent">
+            <i class="fas fa-fingerprint text-white"></i>
+            <h3 class="text-white mt-2">Control de acceso</h3>
+          </div>
         </div>
       </div>
-      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
-        <div class="card-body bg-transparent">
-          <i class="fas fa-handshake text-white"></i>
-          <h3 class="text-white mt-2">Salas de reunion</h3>
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+        <div class="card servicios-card bg-transparent text-center">
+          <div class="card-body bg-transparent">
+            <i class="fas fa-handshake text-white"></i>
+            <h3 class="text-white mt-2">Salas de reunion</h3>
+          </div>
         </div>
       </div>
-      <div class="card servicios-card bg-transparent text-center" style="width: 12rem;">
-        <div class="card-body bg-transparent">
-          <i class="fas fa-concierge-bell text-white"></i>
-          <h3 class="text-white mt-2">Recepcionista</h3>
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+        <div class="card servicios-card bg-transparent text-center">
+          <div class="card-body bg-transparent">
+            <i class="fas fa-concierge-bell text-white"></i>
+            <h3 class="text-white mt-2">Recepcionista</h3>
+          </div>
         </div>
       </div>
-      <div class="card servicios-card bg-transparent text-center mt-5 pb-5" style="width: 12rem;">
-        <div class="card-body bg-transparent">
-          <i class="fas fa-wifi text-white"></i>
-          <h3 class="text-white mt-2">Wifi</h3>
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+        <div class="card servicios-card bg-transparent text-center">
+          <div class="card-body bg-transparent">
+            <i class="fas fa-wifi text-white"></i>
+            <h3 class="text-white mt-2">Wifi</h3>
+          </div>
         </div>
       </div>
     </div>
+    </div>
+    
   </section>
   <!-- FOOTER -->
-  <footer class="container-fluid bg-dark pt-5 pl-5 pr-5 pb-2">
-    <div class="row justify-content-center">
-      <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
-        <a href="index.html"><img src="img/engranaje-blanco.png" width="30" height="30" class="d-inline-block align-top"
-            alt="logo" loading="lazy">
-          Sinergia</a>
+  <footer id="footer-contenedor">
+    <div class="container pt-5 pl-5 pr-5 pb-2">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
+          <a href="index.html"><img src="img/engranaje-blanco.png" width="30" height="30" class="d-inline-block align-top"
+              alt="logo" loading="lazy">
+            Sinergia</a>
+        </div>
+        <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
+          <h5 class="text-white">Productos y servicios</h5>
+          <a href="salas.html">Taller</a>
+          <a href="salas.html">Coworking</a>
+          <a href="cursos.html">Cursos</a>
+        </div>
+        <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
+          <h5 class="text-white">Membresías</h5>
+          <a href="membresias.html">Pase por día</a>
+          <a href="membresias.html">Pase por sector</a>
+          <a href="membresias.html">Pase completo</a>
+        </div>
+        <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
+          <h5 class="text-white">Contacto</h5>
+          <a href="mailto:hola@sinergia.com">hola@sinergia.com</a>
+          <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank">11 2345-6789</a>
+          <a href="https://goo.gl/maps/nw22Yc6SEfgnsBbJA" target="_blank">Bogotá 1852</a>
+        </div>
+        <div class="col-xs-12 col-lg-6 col-xl-2 text-center pb-5 text-white">
+          <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i
+              class="fab fa-instagram ml-2 iconos-footer"></i></a>
+          <a href="https://www.linkedin.com/feed/" target="_blank"><i
+              class="fab fa-linkedin-in ml-2 iconos-footer"></i></a>
+          <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter ml-2 iconos-footer"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i
+              class="fab fa-facebook-square ml-2 iconos-footer"></i></a>
+        </div>
       </div>
-      <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
-        <h5 class="text-white">Productos y servicios</h5>
-        <a href="salas.html">Taller</a>
-        <a href="salas.html">Coworking</a>
-        <a href="cursos.html">Cursos</a>
-      </div>
-      <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
-        <h5 class="text-white">Membresías</h5>
-        <a href="membresias.html">Pase por día</a>
-        <a href="membresias.html">Pase por sector</a>
-        <a href="membresias.html">Pase completo</a>
-      </div>
-      <div class="col-xs-12 col-lg-6 col-xl-2 text-center d-flex flex-column pb-5">
-        <h5 class="text-white">Contacto</h5>
-        <a href="mailto:hola@sinergia.com">hola@sinergia.com</a>
-        <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank">11 2345-6789</a>
-        <a href="https://goo.gl/maps/nw22Yc6SEfgnsBbJA" target="_blank">Bogotá 1852</a>
-      </div>
-      <div class="col-xs-12 col-lg-6 col-xl-2 text-center pb-5 text-white">
-        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i
-            class="fab fa-instagram ml-2 iconos-footer"></i></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank"><i
-            class="fab fa-linkedin-in ml-2 iconos-footer"></i></a>
-        <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter ml-2 iconos-footer"></i></a>
-        <a href="https://www.facebook.com/" target="_blank"><i
-            class="fab fa-facebook-square ml-2 iconos-footer"></i></a>
-      </div>
+      <p class="pt-4 justify-content-center d-flex text-white text-center">© 2020 Sinergia Coworking. Todos los
+        derechos
+        reservados.</p>
     </div>
-    <p class="pt-4 justify-content-center d-flex text-white text-center">© 2020 Sinergia Coworking. Todos los
-      derechos
-      reservados.</p>
+    
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
