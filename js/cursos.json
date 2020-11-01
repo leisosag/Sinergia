@@ -2,115 +2,255 @@
     "cursos": [
         {
             "id": 1,
+            "acento": "cyan",
+            "icono": "fas fa-hammer",
             "titulo": "Carpintería de madera maciza: nivel inicial",
+            "descripcion": "Introducción a los métodos de trabajo tradicionales con madera natural.",
+            "duracion": "8 semanas",
             "precio": 100,
             "img": "./img/maciza1.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "href": "./cursos/carpinteria-maciza-inicial.html",
+            "categoria": "tecnicas"
         },
         {
             "id": 2,
-            "titulo": "Carpintería de madera maciza: nivel intermedio",
+            "acento": "cyan",
+            "icono": "fas fa-hammer",
+            "titulo": "Carpintería de madera maciza: nivel avanzado",
+            "descripcion": "Potenciá tus proyectos de carpintería en madera maciza con este curso.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/maciza2.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/maciza1.jpg",
+            "href": "./cursos/carpinteria-maciza-avanzado.html",
+            "categoria": "tecnicas"
         },
         {
             "id": 3,
+            "acento": "cyan",
+            "icono": "fas fa-hammer",
             "titulo": "Carpintería de madera en placas: nivel inicial",
+            "descripcion": "Introducción a los métodos de trabajo con placas de madera estandarizada.",
+            "duracion": "4 semanas",
             "precio": 100,
             "img": "./img/placa1.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "href": "./carpinteria-placas-inicial.html",
+            "categoria": "tecnicas"
         },
         {
             "id": 4,
-            "titulo": "Carpintería de madera en placas: nivel intermedio",
+            "acento": "cyan",
+            "icono": "fas fa-hammer",
+            "titulo": "Mecánica de bicicletas",
+            "descripcion": "Vas a aprender a armar, reparar y mantener una bicicleta.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/placa2.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/mecanica.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "tecnicas"
         },
         {
             "id": 5,
-            "titulo": "Mecánica de bicicletas",
+            "acento": "cyan",
+            "icono": "fas fa-hammer",
+            "titulo": "Contrucción en steel frame",
+            "descripcion": "Herramientas  para desarrollar un proyecto de construcción en seco.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/mecanica.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/construccion.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "tecnicas"
         },
         {
             "id": 6,
-            "titulo": "Contrucción en steel frame",
+            "acento": "cyan",
+            "icono": "fas fa-hammer",
+            "titulo": "Herrería",
+            "descripcion": "Introducción al oficio de la herrería. No se requieren conocimientos previos",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/construccion.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/herreria.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "tecnicas"
         },
         {
             "id": 7,
-            "titulo": "Herrería",
+            "acento": "cyan",
+            "icono": "fas fa-hammer",
+            "titulo": "Plomería",
+            "descripcion": "Vas a ver materiales y su manipulación a través de corte, amolado y soldadura",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/herreria.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/plomeria.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "tecnicas"
         },
         {
             "id": 8,
-            "titulo": "Plomería",
+            "acento": "rosa",
+            "icono": "far fa-edit",
+            "titulo": "Autocad",
+            "descripcion": "Dominá el modelado en dos dimensiones: piezas industriales y planos.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/plomeria.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/cad.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "software"
         },
         {
             "id": 9,
-            "titulo": "Autocad",
+            "acento": "rosa",
+            "icono": "far fa-edit",
+            "titulo": "SketchUp",
+            "descripcion": "Crea modelos tridimensionales de manera rápida, fácil e intuitiva.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/cad.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/skp.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "software"
         },
         {
             "id": 10,
-            "titulo": "SketchUp",
+            "acento": "rosa",
+            "icono": "far fa-edit",
+            "titulo": "SolidWorks",
+            "descripcion": "Aprende a crear y animar sólidos 3D de forma fácil, práctica y profesional.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/skp.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/solid.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "software"
         },
         {
             "id": 11,
-            "titulo": "SolidWorks",
+            "acento": "rosa",
+            "icono": "far fa-edit",
+            "titulo": "Rhinoceros",
+            "descripcion": "Crea modelos tridimensionales de manera rápida, fácil e intuitiva.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/solid.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/rhino.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "software"
         },
         {
             "id": 12,
-            "titulo": "Rhinoceros",
+            "acento": "rosa",
+            "icono": "far fa-edit",
+            "titulo": "Photoshop",
+            "descripcion": "Aprendé la herramienta de Edición fotográfica más importante del mercado.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/rhino.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/ps.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "software"
         },
         {
             "id": 13,
-            "titulo": "Photoshop",
+            "acento": "rosa",
+            "icono": "far fa-edit",
+            "titulo": "Illustrator",
+            "descripcion": "Vectorizá imágenes desde cero y obtené gráficos perfectos.",
+            "duracion": "6 semanas",
             "precio": 100,
-            "img": "./img/ps.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "img": "./img/ai.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "software"
         },
         {
             "id": 14,
-            "titulo": "Illustrator",
+            "acento": "rosa",
+            "icono": "far fa-edit",
+            "titulo": "Lightroom",
+            "descripcion": "Aprendé a editar y revelar fotografías digitales y mejorar tu flujo de trabajo.",
+            "duracion": "6 semanas",
             "precio": 100,
             "img": "./img/ai.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "software"
         },
         {
             "id": 15,
+            "acento": "verde",
+            "icono": "fas fa-palette",
             "titulo": "Dibujo",
+            "descripcion": "Explora tu creatividad con nuevas técnicas de dibujo a lápiz.",
+            "duracion": "6 semanas",
             "precio": 100,
             "img": "./img/dibujo.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "diseño"
         },
         {
             "id": 16,
+            "acento": "verde",
+            "icono": "fas fa-palette",
             "titulo": "Impresión 3d",
+            "descripcion": "Aprendé a modelar en Tinkercad e imprimí tus primeras piezas.",
+            "duracion": "6 semanas",
             "precio": 100,
             "img": "./img/imp3d.jpg",
-            "href": "carpinteria-maciza-inicial.html"
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "diseño"
+        },
+        {
+            "id": 17,
+            "acento": "verde",
+            "icono": "fas fa-palette",
+            "titulo": "Fotografía",
+            "descripcion": "Profundiza en las reglas y técnicas que necesitas para lograr una foto impactante.",
+            "duracion": "6 semanas",
+            "precio": 100,
+            "img": "./img/imp3d.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "diseño"
+        },
+        {
+            "id": 18,
+            "acento": "verde",
+            "icono": "fas fa-palette",
+            "titulo": "Lettering",
+            "descripcion": "Dibujá letras bonitas y simétricas para diseñar letterings profesionales.",
+            "duracion": "6 semanas",
+            "precio": 100,
+            "img": "./img/imp3d.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "diseño"
+        },
+        {
+            "id": 19,
+            "acento": "verde",
+            "icono": "fas fa-palette",
+            "titulo": "Branding",
+            "descripcion": "Crea la identidad visual de una marca desde cero y construí tu primer brand book.",
+            "duracion": "6 semanas",
+            "precio": 100,
+            "img": "./img/imp3d.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "diseño"
+        },
+        {
+            "id": 20,
+            "acento": "verde",
+            "icono": "fas fa-palette",
+            "titulo": "Ilustración para Moda",
+            "descripcion": "Aprendé a aplicar tus ilustraciones en distintos productos de moda.",
+            "duracion": "6 semanas",
+            "precio": 100,
+            "img": "./img/imp3d.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "diseño"
+        },
+        {
+            "id": 21,
+            "acento": "verde",
+            "icono": "fas fa-palette",
+            "titulo": "Packaging",
+            "descripcion": "Más allá de la etiqueta: diseña envases innovadores y ecoamigables.",
+            "duracion": "6 semanas",
+            "precio": 100,
+            "img": "./img/imp3d.jpg",
+            "href": "carpinteria-maciza-inicial.html",
+            "categoria": "diseño"
         }
         
     ]

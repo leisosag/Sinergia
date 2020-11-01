@@ -1,0 +1,24 @@
+#banner-madera-maciza-i {
+  background-color: var(--cyan);
+}
+#banner-madera-maciza-i1 {
+  background-color: var(--negro-fondo);
+}
+.banner-cyan i {
+  color: var(--cyan);
+}
+.banner-rosa i {
+  color: var(--rosa);
+}
+.banner-verde i {
+  color: var(--verde);
+}
+.texto-banner h4 {
+  color: var(--blanco);
+}
+.contenedor-banner {
+  width: 100%;
+}
+.descripcion-curso h1 {
+  font-size: 3rem;
+}

@@ -1,10 +1,12 @@
 /***** HEADER *****/
-.header-photo img {
+.header-photo img,
+.header-photo-cursos img {
   width: 100%;
   height: 100vh;
   display: block;
   overflow: hidden;
   object-fit: cover;
+  filter: brightness(50%);
 }
 .header-texto {
   position: absolute;
@@ -14,18 +16,20 @@
   z-index: 1;
 }
 .header-texto h1 {
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 .header-texto h2 {
-  font-size: 20px;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 /***** ABOUT *****/
-#about-contenedor {
-  min-height: 60vh;
+#about-contenedor,
+#cursos-contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .card-title {
   font-weight: 700;
@@ -33,73 +37,66 @@
 .card-text {
   color: var(--gris-oscuro);
 }
-.about-cards {
-  height: 18rem;
+.card {
   text-align: center;
   border-radius: 0rem;
   border: 1px solid var(--gris-oscuro);
 }
-
-.about-cards:hover {
-  border: 1px solid var(--gris-oscuro);
-}
-.accent:hover {
-  background-color: var(--black);
-}
-.accent:hover i {
-  color: var(--accent-primary);
-}
-.accent:hover h5,
-.accent:hover p {
-  color: var(--white);
-}
-.about-cards i,
-.icono-color {
-  font-size: 1.3rem;
-  color: #666;
-}
 /***** SALAS *****/
 #salas-contenedor {
-  background: var(--white);
-  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--negro-fondo);
+}
+.fondo-traslucido {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .card-salas {
   border: none;
-  border-radius: 20px;
-}
-.card-img-salas,
-.card-img-cursos {
-  border-radius: 20px 20px 0 0;
-}
-.card-img-salas:hover,
-.card-img-cursos:hover,
-.salas-img:hover {
-  filter: grayscale(100%);
-  transition: 0.5s ease-in;
 }
 .salas-img {
   width: 100%;
 }
+/***** CURSOS *****/
+.selector-cursos li a {
+  color: var(--negro-texto);
+}
+.selector-cursos {
+  list-style: none;
+}
+.cursos-cards {
+  height: 22rem;
+  text-align: center;
+  border-radius: 0rem;
+  border: 1px solid var(--negro-fondo);
+}
+.cat-select {
+  font-weight: 700;
+  background-color: var(--violeta);
+  padding: 0.5rem;
+  color: var(--blanco) !important;
+}
 /***** SERVICIOS *****/
 #servicios-contenedor {
-  background-color: var(--accent-primary);
+  background-color: var(--violeta);
   min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#servicios-contenedor h3,
+#servicios-contenedor i {
+  color: var(--blanco);
+}
 .servicios-card {
   border: none;
 }
 .servicios-card h3 {
-  font-weight: 200;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 .servicios-card i {
-  font-size: 30px;
+  font-size: 1.2rem;
 }
 /***** ABOUT *****/
 .color {

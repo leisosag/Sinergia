@@ -17,28 +17,77 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #fff;">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fff;" id="bootnavbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="img/engranaje.png" width="30" height="30" class="d-inline-block align-top" alt="logo"
             loading="lazy">Sinergia</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-            <a class="nav-link" href="about.html">Qué es Sinergia?</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <!--  active -->
+          <a class="nav-link" href="salas.html">Espacios</a> <!-- <span class="sr-only">(current)</span> -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            Cursos
+          </a>
+          <ul class="dropdown-menu">
+            <!-- <li><a class="dropdown-item" href="#">Software</a></li> -->
+            <li class="nav-link dropdown">
+              <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Técnicas</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cursos/carpinteria-maciza-inicial.html">Carpintería<br>Madera maciza inicial</a></li>
+                <li><a class="dropdown-item" href="cursos/carpinteria-maciza-avanzado.html">Carpintería<br>Madera maciza avanzado</a></li>
+                <li><a class="dropdown-item" href="cursos/carpinteria-placas-inicial.html">Carpintería<br>Madera placas inicial</a></li>
+                <li><a class="dropdown-item" href="cursos/mecanica.html">Mecánica</a></li>
+                <li><a class="dropdown-item" href="cursos/steel-frame.html">Construcción en seco</a></li>
+                <li><a class="dropdown-item" href="cursos/herreria.html">Herrería</a></li>
+                <li><a class="dropdown-item" href="cursos/plomeria.html">Plomería</a></li>
+              </ul>
+            </li>
+            <li class="nav-link dropdown">
+              <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Software</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cursos/autocad.html">Autocad</a></li>
+                <li><a class="dropdown-item" href="cursos/sketchup.html">SketchUp</a></li>
+                <li><a class="dropdown-item" href="cursos/solidworks.html">SolidWorks</a></li>
+                <li><a class="dropdown-item" href="cursos/rhinoceros.html">Rhinoceros</a></li>
+                <li><a class="dropdown-item" href="cursos/photoshop.html">Photoshop</a></li>
+                <li><a class="dropdown-item" href="cursos/illustrator.html">Illustrator</a></li>
+                <li><a class="dropdown-item" href="cursos/lightroom.html">Lightroom</a></li>
+              </ul>
+            </li>
+            <li class="nav-link dropdown">
+              <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Diseño</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cursos/dibujo.html">Dibujo</a></li>
+                <li><a class="dropdown-item" href="cursos/impresion-3d.html">Impresión 3d</a></li>
+                <li><a class="dropdown-item" href="cursos/fotografia.html">Fotografía</a></li>
+                <li><a class="dropdown-item" href="cursos/lettering.html">Lettering</a></li>
+                <li><a class="dropdown-item" href="cursos/branding.html">Branding</a></li>
+                <li><a class="dropdown-item" href="cursos/ilustracion-moda.html">Ilustración para Moda</a></li>
+                <li><a class="dropdown-item" href="cursos/packaging.html">Packaging</a></li>
+              </ul>
+            </li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Comunidad</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="membresias.html">Membresías</a>
-            <a class="nav-link" href="salas.html">Salas</a>
-            <a class="nav-link" href="cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contacto</a>
-        </div>
+          </li>
+      </ul>
+      </div>
     </div>
-    </div>
-    
-</nav>
-  <!-- HEADER -->
+  </nav>
+  <!-- HEADER FOTO -->
   <section class="header" id="header">
     <div class="header-photo">
       <picture>
@@ -49,47 +98,47 @@
       <div class="header-texto container">
         <h1 class="text-white">SINERGIA</h1>
         <h2 class="text-white">TU LUGAR DE TRABAJO</h2>
-        <a href="contacto.html"><button class="btn btn-reservar">Reservar</button></a>
+        <a href="contacto.html"><button class="btn btn-outline-light btn-violeta"><b>Reservar</b></button></a>
       </div>
     </div>
   </section>
   <!-- ABOUT -->
   <section id="about-contenedor">
-    <div class="container">
-      <div class="row justify-content-center text-center pt-5 ml-5 mr-5">
-        <h2 class="pt-5 pb-2 text-uppercase">Recursos para diseñadores</h2>
-        <p class="text-center pb-5 texto-descripcion">
+    <div class="container pt-5 pb-5">
+      <div class="row justify-content-center text-center pt-5 pb-5 m-1">
+        <h2 class="pb-2 text-uppercase">Recursos para diseñadores</h2>
+        <p class="text-center texto-descripcion">
           Sinergia es un taller de diseño colaborativo. Espacio, comunidad y recursos para potenciar tus proyectos.
         </p>
       </div>
       <div class="row pb-5 justify-content-center">
         <div class="col-lg-4 col-xs-12">
-          <div class="card about-cards accent m-1">
+          <div class="card accent accent-rosa m-1">
             <div class="card-body d-flex flex-column justify-content-center text-left m-2">
               <i class="fas fa-pencil-ruler mb-3"></i>
-              <h5 class="card-title">ESPACIO</h5>
+              <h5 class="card-title">ESPACIOS</h5>
               <p class="card-text">Talleres, mesas de trabajo, escritorios, espacios adecuados para diseñar.</p>
-              <a href="membresias.html" class="btn">Ver membresias</a>
+              <a href="salas.html" class="btn btn-outline-dark btn-rosa">Ver salas</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-xs-12">
-          <div class="card about-cards accent m-1">
+          <div class="card accent accent-verde m-1">
             <div class="card-body d-flex flex-column justify-content-center text-left m-2">
-              <i class="fas fa-pencil-ruler mb-3"></i>
-              <h5 class="card-title">CAPACITACION</h5>
-              <p class="card-text">Potencia tus habilidades aprendiendo herramientas nuevas.</p>
-              <a href="cursos.html" class="btn">Ver cursos</a>
+              <i class="fas fa-graduation-cap mb-3"></i>
+              <h5 class="card-title">CURSOS</h5>
+              <p class="card-text">Potencia tus habilidades aprendiendo nuevas herramientas.</p>
+              <a href="#cursos-contenedor" class="btn btn-outline-dark btn-verde">Ver cursos</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-xs-12">
-          <div class="card about-cards accent m-1">
+          <div class="card accent accent-cyan m-1">
             <div class="card-body d-flex flex-column justify-content-center text-left m-2">
               <i class="fas fa-users mb-3"></i>
               <h5 class="card-title">COMUNIDAD</h5>
               <p class="card-text">Formá parte de esta creciente comunidad de creativos.</p>
-              <a href="club.html" class="btn">Forma parte</a>
+              <a href="about.html" class="btn btn-outline-dark btn-cyan">Forma parte</a>
             </div>
           </div>
         </div>
@@ -98,128 +147,70 @@
   </section>
   <!-- SALAS -->
   <section id="salas-contenedor">
-    <div class="container">
-      <div class="row justify-content-center text-center text-uppercase pt-5 pb-5">
-        <h2>Te acompañamos en cada etapa de tu proyecto</h2>
-      </div>
-      <div class="row pb-5 justify-content-center">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-salas accent m-1 text-center">
-            <img src="img/taller.jpg" class="card-img-top card-img-salas" alt="espacio de taller">
-            <div class="card-body">
-              <h5 class="card-title">Taller</h5>
-              <p class="card-text">Mesadas amplias con herramientas de bancada</p>
-              <a href="salas.html" class="btn">Ver</a>
-            </div>
-          </div>
+    <div class="container pt-5 pb-5">
+      <div class="row justify-content-center pt-5 pb-5">
+        <div class="col-md-4 d-flex justify-content-center flex-column m-2">
+          <h2 class="text-white text-uppercase">Te acompañamos en cada etapa de tu proyecto</h2>
+          <p class="text-white">Sinergia es el lugar para trabajar en tus proyectos. Contamos con todo lo necesario para diseñar: espacio, herramientas y máquinas.</p>
+          <a href="salas.html" class="btn btn-outline-light">Conocé nuestras salas</a>
         </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-salas accent m-1 text-center">
-            <img src="img/coworking.jpg" class="card-img-top card-img-salas" alt="espacio de coworking">
-            <div class="card-body">
-              <h5 class="card-title">Coworking</h5>
-              <p class="card-text">Puestos de trabajo flexibles</p>
-              <a href="salas.html" class="btn mt-4">Ver</a>
+        <div class="col-md-6 m-2 pt-5 pb-5">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators pb-3">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/coworking.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block fondo-traslucido">
+                  <h5>Coworking</h5>
+                  <p>Puestos de trabajo flexibles.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/taller.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block fondo-traslucido">
+                  <h5>Taller</h5>
+                  <p>Mesadas amplias con herramientas de bancada.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/reunion.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block fondo-traslucido">
+                  <h5>Salas de reunión</h5>
+                  <p>Salas de 4 a 20 personas.</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-salas accent m-1 text-center">
-            <img src="img/reunion.jpg" class="card-img-top card-img-salas" alt="sala de reunion">
-            <div class="card-body">
-              <h5 class="card-title">Salas de reunión</h5>
-              <p class="card-text">Salas de 4 a 20 personas</p>
-              <a href="salas.html" class="btn mt-4">Ver</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card card-salas accent m-1 text-center">
-            <img src="img/pañol.jpg" class="card-img-top card-img-salas" alt="pañol">
-            <div class="card-body">
-              <h5 class="card-title">Pañol</h5>
-              <p class="card-text">Alquiler de herramientas y venta de materiales</p>
-              <a href="salas.html" class="btn">Ver</a>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- SERVICIOS -->
-  <section id="servicios-contenedor">
-    <div class="container pb-5">
-      <h2 class="text-white text-uppercase text-center pt-5 pb-5">Encargate de tu proyecto, nosotros nos encargamos del resto</h2>
-    <div class="row justify-content-center align-items-center">
-      <div class="col-lg-3 col-sm-6 col-xs-12">
-        <div class="card servicios-card bg-transparent text-center">
-          <div class="card-body bg-transparent">
-            <i class="fas fa-lock text-white"></i>
-            <h3 class="text-white mt-2">Espacios de guardado</h3>
-          </div>
-        </div>
+  <!-- CURSOS -->
+  <section id="cursos-contenedor">
+    <div class="container pt-5 pb-5">
+      <div class="row d-flex flex-column justify-content-center pt-5 pb-5 m-1">
+        <h2 class="pb-2 text-uppercase text-center">Reforzá o adquirí nuevas skills</h2>
+        <ul class="d-flex justify-content-center selector-cursos" id="selector-cursos">
+          <li><a class="m-2 text-uppercase" href="#" id="todos">Todos</a></li>
+          <li><a class="m-2 text-uppercase" href="#" id="tecnicas">Técnicas</a></li>
+          <li><a class="m-2 text-uppercase" href="#" id="software">Software</a></li>
+          <li><a class="m-2 text-uppercase" href="#" id="diseño">Diseño</a></li>
+        </ul>
       </div>
-      <div class="col-lg-3 col-sm-6 col-xs-12">
-        <div class="card servicios-card bg-transparent text-center">
-          <div class="card-body bg-transparent">
-            <i class="fas fa-print text-white"></i>
-            <h3 class="text-white mt-2">Bajadas y ploteos</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 col-xs-12">
-        <div class="card servicios-card bg-transparent text-center">
-          <div class="card-body bg-transparent">
-            <i class="fas fa-coffee text-white"></i>
-            <h3 class="text-white mt-2">Cafetería</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 col-xs-12">
-          <div class="card servicios-card bg-transparent text-center">
-          <div class="card-body bg-transparent">
-            <i class="fas fa-users text-white"></i>
-            <h3 class="text-white mt-2">Comunidad</h3>
-          </div>
-        </div>
-      </div>
+      <div class="row pb-5 justify-content-center" id="contenedor-cursos"></div>
     </div>
-    <div class="row justify-content-center align-items-center">
-      <div class="col-lg-3 col-sm-6 col-xs-12">
-        <div class="card servicios-card bg-transparent text-center">
-          <div class="card-body bg-transparent">
-            <i class="fas fa-fingerprint text-white"></i>
-            <h3 class="text-white mt-2">Control de acceso</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 col-xs-12">
-        <div class="card servicios-card bg-transparent text-center">
-          <div class="card-body bg-transparent">
-            <i class="fas fa-handshake text-white"></i>
-            <h3 class="text-white mt-2">Salas de reunion</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 col-xs-12">
-        <div class="card servicios-card bg-transparent text-center">
-          <div class="card-body bg-transparent">
-            <i class="fas fa-concierge-bell text-white"></i>
-            <h3 class="text-white mt-2">Recepcionista</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 col-xs-12">
-        <div class="card servicios-card bg-transparent text-center">
-          <div class="card-body bg-transparent">
-            <i class="fas fa-wifi text-white"></i>
-            <h3 class="text-white mt-2">Wifi</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    
   </section>
   <!-- FOOTER -->
   <footer id="footer-contenedor">
@@ -262,7 +253,6 @@
         derechos
         reservados.</p>
     </div>
-    
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -274,6 +264,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="js/bootnavbar.js"></script>
+    <script src="js/cursos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      $(function () {
+          $('#bootnavbar').bootnavbar();
+      })
+  </script>
 </body>
 
 </html>

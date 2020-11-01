@@ -1,11 +1,4 @@
 :root {
-  --accent-primary: #a72cff;
-  --accent-hover: #550f89;
-  --black: #333;
-  --white: #fafafa;
-  --grey-light: #e6e6e6;
-  --grey-dark: rgb(139, 139, 139);
-
   --rosa: #ff48ca;
   --rosa-claro: #ff00f2;
   --verde: #4f5;
@@ -17,16 +10,16 @@
   --naranja: #f90;
   --naranja-claor: #f8c100;
   --negro-texto: #212529;
-  --negro-fondo: #333;
+  /*--negro-fondo: #333;*/
+  --negro-fondo: #222;
   --blanco: #fff;
   --gris-claro: #f0f0f0;
-  --gris-oscuro: #666;
+  --gris-oscuro: #343a40;
   /*
     violeta main
-    rosa grafico
-    verde arquitectura
-    cyan industrial
-    naranja imagen y sonido
+    rosa software
+    verde diseño
+    cyan tecnicas
     */
 }
 body {
@@ -43,33 +36,67 @@ h2 {
 .card-title {
   font-size: 1.2rem;
 }
-/***** BOTONES *****/
-.btn {
-  border-color: var(--gris-oscuro);
-  color: var(--gris-oscuro);
+/***** BOTONES Y ACENTO *****/
+.accent:hover {
+  background-color: var(--negro-fondo);
 }
-.accent:hover .btn {
-  border-color: var(--violeta-claro);
-  color: var(--violeta-claro);
+/* ROSA */
+.accent-rosa:hover i {
+  color: var(--rosa);
 }
-.btn:hover {
-  background-color: var(--violeta);
-  border-color: var(--violeta);
-  color: var(--white) !important;
+.accent-rosa:hover .btn {
+  border-color: var(--rosa);
+  color: var(--rosa);
 }
-.btn-reservar,
-.btn-lleno {
-  background-color: var(--accent-primary);
+.btn-rosa:hover {
+  background-color: var(--rosa);
+  border-color: var(--rosa);
+  color: var(--negro-texto) !important;
+}
+/* VERDE */
+.accent-verde:hover i {
+  color: var(--verde);
+}
+.accent-verde:hover .btn {
+  border-color: var(--verde);
+  color: var(--verde);
+}
+.btn-verde:hover {
+  background-color: var(--verde);
+  border-color: var(--verde);
+  color: var(--negro-texto) !important;
+}
+/* CYAN */
+.accent-cyan:hover i {
+  color: var(--cyan);
+}
+.accent-cyan:hover .btn {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+.btn-cyan:hover {
+  background-color: var(--cyan);
+  border-color: var(--cyan);
+  color: var(--negro-texto) !important;
+}
+.btn-inscripcion {
+  padding: 0.5rem 2.5rem;
+  font-size: 1.2rem;
+}
+/* VIOLETA */
+.accent:hover h5,
+.accent:hover p,
+.accent:hover h3 {
   color: var(--white);
 }
-.btn-reservar:hover {
-  background-color: transparent;
-  border-color: var(--white);
+.btn-violeta {
+  padding: 0.5rem 2.5rem;
+  font-size: 1.2rem;
 }
-.btn-lleno:hover {
-  background-color: transparent;
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
+.btn-violeta:hover {
+  background-color: var(--violeta);
+  border-color: var(--violeta);
+  color: var(--blanco) !important;
 }
 button.mercadopago-button {
   color: #fff;
@@ -80,6 +107,16 @@ button.mercadopago-button:hover {
   color: #fff;
   background-color: var(--secondary);
   border-color: var(--secondary);
+}
+/***** ANIMACIONES *****/
+.animacion {
+  opacity: 0;
+  transform: translateY(8rem);
+  transition: 0.2s all ease-in-out;
+}
+.mostrar-animacion {
+  opacity: 1;
+  transform: translateY(0px);
 }
 /***** NAVBAR *****/
 .nav-link,
@@ -98,6 +135,46 @@ button.mercadopago-button:hover {
 .nav-link:hover,
 .nav-link:focus {
   background-size: 100% 1px;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+  font-size: 1.1rem;
+  color: var(--negro-texto);
+}
+/***** DROPDOWN MENU *****/
+.dropdown-menu {
+  margin-top: 0;
+}
+.dropdown-menu .dropdown-toggle::after {
+  vertical-align: middle;
+  border-left: 4px solid;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+.dropdown-menu .dropdown .dropdown-menu {
+  left: 100%;
+  top: 0%;
+  margin: 0 20px;
+  border-width: 0;
+}
+.dropdown-menu .dropdown .dropdown-menu.left {
+  right: 100%;
+  left: auto;
+}
+.dropdown-menu > li a:hover,
+.dropdown-menu > li.show {
+  background: var(--violeta);
+  color: white;
+}
+.dropdown-menu > li.show > a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .dropdown-menu .dropdown .dropdown-menu {
+    margin: 0;
+    border-width: 1px;
+  }
 }
 /***** FOOTER *****/
 #footer-contenedor {
@@ -119,15 +196,9 @@ a:hover {
   color: var(--violeta);
   transition: 0.1s;
 }
+
 /***** MOBILE *****/
 @media only screen and (max-width: 420px) {
-  .header-texto {
-    top: 15%;
-    left: 5%;
-  }
-  .header-texto h2 {
-    font-size: 20px;
-  }
   .contacto-form h1 {
     font-size: 30px;
   }
